@@ -10,6 +10,6 @@ Some util codes.
 		%local par;
 		%let par = %scan(&desc., &n., &sep.);
 		%let n = %eval(&n. + 1);
-		%&iterF.(&par.)
+		%&iterF.(%str(&par.))
 	%end;
 %mend;
